@@ -7,7 +7,7 @@ import requests
 
 # NLP model 
 
-df = pd.read_csv('IMDB_Top250Engmovies2_OMDB_Detailed.csv')
+df = pd.read_csv('movies_list.csv')
 punc = string.punctuation
 df.Plot = df.Plot.apply(lambda x : "".join([i for i in x if i not in punc]))
 rake = Rake()
